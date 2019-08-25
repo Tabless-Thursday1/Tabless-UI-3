@@ -1,0 +1,25 @@
+.flex-box(@justify:center, @item:center, @content:center){
+    display:flex;
+    justify-content: @justify;
+    align-items: @item;
+    align-content: @content;
+}
+
+.centered(@width){
+    //takes width and uses margin 0 auto
+    width:@width;
+    margin: 0 auto;
+}
+
+//mixin will be needed for headshots
+// mixin will be needed for boxes
+.button-please(@bg-c:dodgerblue, @border-rad:3px, @width:27%,@padding:3%){
+    padding: @padding;
+    background-color: @bg-c;
+    border-radius: @border-rad;
+    text-align: center;
+    color:white;
+    font-size: 1.7em;
+    width:@width;
+    // margin: 0 auto;
+}   
