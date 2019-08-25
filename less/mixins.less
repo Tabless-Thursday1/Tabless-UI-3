@@ -1,8 +1,9 @@
-.flex-box(@justify:center, @item:center, @content:center){
+.flex-box(@justify:center, @item:center, @content:center, @direction:row){
     display:flex;
     justify-content: @justify;
     align-items: @item;
     align-content: @content;
+    flex-direction:@direction;
 }
 
 .centered(@width){
