@@ -18,9 +18,9 @@ div.navBar {
 }
 
 section.home-section {
-    .centered(90vw);
+    .centered(85vw);
     .flex-box(@justify: space-evenly);
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 5%;
@@ -36,38 +36,45 @@ section.home-section {
     }
 
     div.home-text {
-        width:45%;
-        display:flex;
-        flex-direction: column;
-        align-content: center;
-        text-align: center;
+
+        width: 45%;
+        .flex-box(@direction:column);
 
         a {
             align-self: center;
-            .button-please(@width:40%);
-            margin:3% ;
+            .button-please(@width: 40%);
+            margin: 3%;
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 background-color: white;
                 color: dodgerblue;
-                border: 1px solid dodgerblue;  
+                border: 1px solid dodgerblue;
             }
         }
     }
 
 }
 
-section.product-description{
-    div.background{
+section.product-description {
+
+    //background image  and text!
+    div.background {
         background-image: url('../img/mountain-background.png');
         min-height: 45vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
-        h2{
-            
+
+        @media @tablet {
+            background-image: url('../img/mountain-background.png');
+            min-height: 30vh;
+            background-position:none;
+        }
+
+        h2 {
+
             position: relative;
             font-size: 8rem;
             color: lightblue;
@@ -80,34 +87,64 @@ section.product-description{
         }
     }
 
-    div.product-feature-wrapper{
-        // .flex-box();
-        // width: 50%;
-        // flex-wrap: wrap;
-        // .centered(80vw);
-        padding-top: 3%;
-        background: whitesmoke;
+    //background image  and text!
 
-        div.product-feature{
-            .centered(95vw);
-            .flex-box(@justify:space-around);
-            border-bottom: 1px solid #B0D9D5;
+    div.product-feature-wrapper {
+        // Feature Cards!
+        //background: whitesmoke;
+        padding: 4% 0;
+        .flex-box(@direction:column, @justify: space-evenly, @item:flex-start);
+
+        @media @tablet {
+            .flex-box(@direction: column);
+            //padding-top: 3%;
+        }
+
+        div.product-feature {
+            .flex-box(@justify:space-evenly);
+            .centered(75%);
+            // margin:3% auto;
             padding-bottom: 2%;
-            margin-bottom: 2%;
-            
-            // flex-wrap: wrap;
-            div.product-img{
-                width:35%;
+                margin-bottom: 2%;
+            border-bottom: 1px solid #B0D9D5;
+
+            @media @tablet {
+                .centered(95vw);
+                .flex-box(@justify: space-around);
+                border-bottom: 1px solid #B0D9D5;
             }
-            div.product-text{
-                width: 45%;
-                h3{
+
+            // flex-wrap: wrap;
+            div.product-img {
+                width:45%;
+        
+                img{
+                    border-radius: 5px;
+                }
+                @media @tablet {
+                    width: 40%;
+                }
+            }
+
+            div.product-text {
+                width:45%;
+                @media @tablet {
+                    width: 45%;
+                }
+
+                h3 {
+                    margin: 4% 0;
                     text-align: center;
-                    padding: 3% 0; 
+                    @media @tablet {
+                        text-align: center;
+                        padding: 3% 0;
+                    }
                 }
             }
         }
-    }   
+    }
+
+    //Feature Cards!   
 }
 
 
@@ -129,19 +166,20 @@ section.box-wrapper {
         flex-direction: column;
         border: 2px whitesmoke solid;
         border-radius: 5px;
+
         // div{
         //     display:flex;
         //     flex-direction: row-reverse;
         //     justify-content: space-around;
         //     width: 90%;
         // }
-        p{
+        p {
             text-align: center;
         }
 
         img.head-shot {
-             
-            width:40%;  
+
+            width: 40%;
         }
 
         a.fab {
