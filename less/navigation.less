@@ -141,7 +141,7 @@ section.product-description {
     }
 
     //background image  and text!
-
+    
     div.product-feature-wrapper {
         // Feature Cards!
         // background: whitesmoke;
@@ -235,9 +235,33 @@ section.product-description {
 
 //about
 
-
+section.about-section{
+    div.banner-title{
+        padding-top:4%;
+            padding-bottom:8%;
+            background: @darkest;
+            color:@lightest;
+            .flex-box(@direction:column);
+        //.centered(100%);
+        h1{
+            font-size: 7.5rem;
+            text-align: center;
+        }
+        img{
+            //.centered(50%);
+            margin: 0 auto;
+            width:80%;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 1.75rem;
+            padding-top:3%;
+            .centered(80%);
+            text-align: center;
+        }
+    }
 section.box-wrapper {
-    .flex-box();
+    .flex-box(@item:stretch, @content: flex-start);
     .centered(90vw);
     flex-wrap: wrap;
 
@@ -247,7 +271,7 @@ section.box-wrapper {
         margin: 1.5%;
         .flex-box();
         flex-direction: column;
-        border: 2px whitesmoke solid;
+        border: 1px @lightest solid;
         border-radius: 5px;
 
         // div{
@@ -280,6 +304,7 @@ section.box-wrapper {
             .centered(90%) //width:
         }
     }
+}
 }
 
 //the footer

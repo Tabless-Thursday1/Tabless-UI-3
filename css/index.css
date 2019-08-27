@@ -473,17 +473,44 @@ section.product-description div.product-feature-wrapper div.product-feature div.
   color: #277373;
   border: 1px solid #277373;
 }
-section.box-wrapper {
+section.about-section div.banner-title {
+  padding-top: 4%;
+  padding-bottom: 8%;
+  background: #277373;
+  color: #b0d9d5;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-direction: column;
+}
+section.about-section div.banner-title h1 {
+  font-size: 7.5rem;
+  text-align: center;
+}
+section.about-section div.banner-title img {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+}
+section.about-section div.banner-title p {
+  font-size: 1.75rem;
+  padding-top: 3%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+section.about-section section.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
   flex-direction: row;
   width: 90vw;
   margin: 0 auto;
   flex-wrap: wrap;
 }
-section.box-wrapper .box {
+section.about-section section.box-wrapper .box {
   width: 30%;
   padding: 1.5%;
   margin: 1.5%;
@@ -493,23 +520,23 @@ section.box-wrapper .box {
   align-content: center;
   flex-direction: row;
   flex-direction: column;
-  border: 2px whitesmoke solid;
+  border: 1px #b0d9d5 solid;
   border-radius: 5px;
 }
-section.box-wrapper .box p {
+section.about-section section.box-wrapper .box p {
   text-align: center;
 }
-section.box-wrapper .box img.head-shot {
+section.about-section section.box-wrapper .box img.head-shot {
   width: 40%;
 }
-section.box-wrapper .box a.fab {
+section.about-section section.box-wrapper .box a.fab {
   color: black;
   padding: 1.5% 0;
 }
-section.box-wrapper .box h3 {
+section.about-section section.box-wrapper .box h3 {
   padding: 1.5% 0 3% 0;
 }
-section.box-wrapper .box p {
+section.about-section section.box-wrapper .box p {
   width: 90%;
   margin: 0 auto;
 }
