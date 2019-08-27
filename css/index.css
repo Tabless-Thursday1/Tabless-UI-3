@@ -359,6 +359,7 @@ section.product-description div.background h2 {
 }
 @media (max-width:800px) {
   section.product-description div.background h2 {
+    font-size: 7rem;
     top: 6rem;
   }
 }
@@ -469,7 +470,7 @@ section.product-description div.product-feature-wrapper div.product-feature div.
   text-align: center;
   color: white;
   font-size: 1.7em;
-  width: 50%;
+  width: 60%;
   margin: 3%;
   text-decoration: none;
 }
