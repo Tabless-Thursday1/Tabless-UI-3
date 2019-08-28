@@ -174,13 +174,14 @@ section.product-description {
                     //align-self: flex-end;
                     .button-please(@bg-c: @button-color, @padding: 3% 8%, @width: 60%);
                     margin: 3%;
-
+                    box-shadow: 0 1px 2px;
                     text-decoration: none;
 
                     &:hover {
                         background-color: white;
                         color: @darkest;
                         border: 1px solid @darkest;
+                
                     }
                 }
             }
@@ -201,8 +202,15 @@ section.about-section {
 
         //.centered(100%);
         h1 {
-            font-size: 7.5rem;
+            font-size: 7rem;
             text-align: center;
+            padding-bottom: 3%;
+            @media @tablet{
+                font-size: 5rem;
+            }
+            @media @phone{
+                font-size: 3.5rem;
+            }
         }
 
         img {
@@ -217,12 +225,16 @@ section.about-section {
             padding-top: 3%;
             .centered(80%);
             text-align: center;
+            @media @phone{
+                font-size: 1.5rem;
+            }
         }
     }
 
     h2.team-title {
         text-align: center;
         padding-top: 3%;
+      
     }
 
     section.box-wrapper {

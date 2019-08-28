@@ -198,7 +198,7 @@ h4 {
 }
 p {
   line-height: 1.6;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-bottom: 10px;
 }
 img {
@@ -250,6 +250,15 @@ div.navBar nav a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  font-size: 2rem;
+}
+div.navBar nav a:hover {
+  color: #277373;
+}
+@media (max-width:800px) {
+  div.navBar nav a {
+    font-size: 1.75rem;
+  }
 }
 @media (max-width:500px) {
   div.navBar nav a {
@@ -472,6 +481,7 @@ section.product-description div.product-feature-wrapper div.product-feature div.
   font-size: 1.7em;
   width: 60%;
   margin: 3%;
+  box-shadow: 0 1px 2px;
   text-decoration: none;
 }
 section.product-description div.product-feature-wrapper div.product-feature div.product-text a:hover {
@@ -491,8 +501,19 @@ section.about-section div.banner-title {
   flex-direction: column;
 }
 section.about-section div.banner-title h1 {
-  font-size: 7.5rem;
+  font-size: 7rem;
   text-align: center;
+  padding-bottom: 3%;
+}
+@media (max-width:800px) {
+  section.about-section div.banner-title h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width:500px) {
+  section.about-section div.banner-title h1 {
+    font-size: 3.5rem;
+  }
 }
 section.about-section div.banner-title img {
   margin: 0 auto;
@@ -505,6 +526,11 @@ section.about-section div.banner-title p {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width:500px) {
+  section.about-section div.banner-title p {
+    font-size: 1.5rem;
+  }
 }
 section.about-section h2.team-title {
   text-align: center;
